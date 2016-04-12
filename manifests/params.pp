@@ -12,6 +12,7 @@ class systemd::params {
         default: { fail('Unsupported RHEL/CentOS version!')  }
       }
     }
+    'debian' : { }
     default  : { fail('Unsupported OS!') }
   }
 }
