@@ -1,10 +1,10 @@
 class systemd::params {
 
-  case $::osfamily
+  case $facts['osfamily']
   {
     'redhat' :
     {
-      case $::operatingsystemrelease
+      case $facts['operatingsystemrelease']
       {
         /^7.*$/:
         {
